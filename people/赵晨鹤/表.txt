@@ -1,0 +1,14 @@
+admin  后台管理员表
+comment  评论表
+evaluation  评价表
+msg 消息表
+msg_detail  消息详情表
+order  订单表
+order_detail 订单详情表
+products  商品表
+shop_user 商户表
+shoppingcart 购物车表
+shoppingcart_detail  购物车详情表
+specification  规格表
+super_admin  超级管理员表
+user  用户表
