@@ -1,0 +1,165 @@
+<RelativeLayout
+    android:background="#E5E5E5"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--顶部-->
+            <FrameLayout
+                android:id="@+id/dingbu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/iv_image"
+                        android:layout_width="25dp"
+                        android:src="@drawable/fanhui"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:layout_weight="9"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:text="个人信息"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="15dp"
+                        android:src="@drawable/caianniu"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+            </FrameLayout>
+            <!--个人信息-->
+
+                <TableLayout
+                    android:layout_marginTop="5dp"
+                    android:stretchColumns="0,1,2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:background="#FFFFFF"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="200dp"
+                            android:textSize="20dp"
+                            android:text="头像"/>
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/blog3"/>
+                        <ImageView
+                            android:id="@+id/iv_update"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/dizhi"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center">
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_span="2"
+                            android:layout_height="70dp"
+                            android:layout_width="250dp"
+                            android:textSize="20dp"
+                            android:text="会员名"/>
+                        <EditText android:hint="十步一人"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center">
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_span="2"
+                            android:layout_height="70dp"
+                            android:layout_width="200dp"
+                            android:textSize="20dp"
+                            android:text="昵称"/>
+                        <EditText android:hint="千里无形"/>
+
+                    </TableRow>
+
+
+                   <TableRow
+                       android:background="#FFFFFF"
+                       android:layout_marginTop="2dp"
+                       android:gravity="center">
+                       <TextView
+                           android:gravity="center_vertical"
+                           android:layout_marginLeft="5dp"
+                           android:layout_span="2"
+                           android:layout_height="70dp"
+                           android:layout_width="200dp"
+                           android:textSize="20dp"
+                           android:text="会员等级"/>
+                       <TextView android:text="普通会员"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:background="#FFFFFF"
+                       android:layout_marginTop="2dp"
+                       android:gravity="center">
+                       <TextView
+                           android:gravity="center_vertical"
+                           android:layout_marginLeft="5dp"
+                           android:layout_span="2"
+                           android:layout_height="70dp"
+                           android:layout_width="200dp"
+                           android:textSize="20dp"
+                           android:text="修改性别"/>
+                       <EditText android:hint="男"/>
+
+
+                   </TableRow>
+
+                   <TableRow
+                       android:background="#FFFFFF"
+                       android:layout_marginTop="2dp"
+                       android:gravity="center">
+                       <TextView
+                           android:gravity="center_vertical"
+                           android:layout_marginLeft="5dp"
+                           android:layout_span="2"
+                           android:layout_height="70dp"
+                           android:layout_width="200dp"
+                           android:textSize="20dp"
+                           android:text="收货地址管理"/>
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/dizhi"/>
+                   </TableRow>
+                </TableLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
